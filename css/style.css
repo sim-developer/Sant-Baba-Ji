@@ -1,0 +1,368 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    margin: 0;
+	box-sizing: border-box;
+    padding: 0;
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, blockquote, big, body, center, canvas, caption, cite, code, command, datalist, dd, del, details, dfn, dl, div, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, keygen, label, legend, li, meter, nav, object, ol, output, p, pre, progress, q, s, samp, section, small, span, source, strike, strong, sub, sup, table, tbody, tfoot, thead, th, tr, tdvideo, tt, u, ul, var {
+    margin: 0;
+    padding: 0;
+}
+ol, ul {
+   
+}
+blockquote, q {
+    quotes: none;
+}
+table, table td {
+    padding: 0;
+    border: none;
+    border-collapse: collapse;
+  
+}
+
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {
+    display: block;
+}
+mark, rp, rt, ruby, summary, time {
+    display: inline;
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+
+a:hover{
+	
+	text-decoration: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+  font-family: 'Saira', sans-serif;
+
+    width: 100%;
+    height: 100%;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 23px;
+color: #fff;
+	z-index: 1;
+	background: #fff;
+	overflow: hidden;
+}
+.bg_img{
+	position: absolute;
+	width: 100%;
+	height: calc( 100vh - 50px);
+	z-index: 0;    overflow: hidden;
+	
+}
+.bg_img img{
+	    width: 48%;
+    transform: translate(0px, -20%);
+	
+}
+.site_content{
+	position: relative;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	
+	    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header{
+	width: 100%;
+	padding: 0.5rem;
+	display: flex;
+	padding: 40px;
+	padding-left: 5rem;
+	justify-content: space-between;
+}
+.diya_top_left{
+	position: absolute;
+		top:0;
+
+	left: 0;
+}
+.diya_top_right{
+	position: absolute;
+		top:0;
+	
+	right: 0;
+}
+.media_play{
+	width: 100%;
+	
+}
+.img_center{
+	position: absolute;
+	width: 100%;
+}
+.img_center img{
+	max-width: 400px;
+	margin: 0 auto;
+	display: table;
+}
+.diya_top_left img, .diya_top_right img{
+	width: 60%;
+}
+.diya_top_right img{
+	float: right;
+}
+header .nav_list ul{
+	list-style: none;
+}
+header .nav_list ul li{
+	display: inline-block;
+	padding-left: 8rem;
+}
+header .nav_list ul li:first-child{
+	padding-left: 0;
+}
+.bottom_box{
+	display: flex;
+	width: 100%;
+	align-items: flex-end;
+}
+.left_box{
+	width: 35vw;
+}
+.la_box{
+	width: 100%;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 0 0.5rem;
+	padding-left: 5rem;
+	color: #406C5D;
+	
+}
+.green_box{
+	display:flex;
+	    height: 100%;
+    align-items: flex-start;
+}
+.green_box h1{
+	font-size: 36px;
+	line-height: 40px;
+	font-weight: 600;
+	width: 350px;
+	letter-spacing: 0.3px;
+	
+}
+.green_box p{
+	font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+   
+    line-height: 26px;
+}
+.green_box  p:first-child{
+	 margin-bottom: 20px;
+}
+.para_gre{
+	margin-left: 4rem;
+	width: calc(100% - 350px);
+	padding-right: 4rem;
+}
+.right_box{
+	background: #ff9933;
+	padding: 40px;
+	width: 65vw;
+}
+.la_inner h2{
+	font-size: 36px;
+	color: #ff9933;
+	line-height: 40px;
+	letter-spacing: 0.2px;
+	margin-bottom: 15px;
+}
+.ds_listing a{
+	    color: #ff9933;
+	text-decoration: none;
+}
+.ds_link{
+	font-size: 20px;
+	color: #ff9933;
+	margin-bottom: 15px;
+	display: flex;
+    align-items: center;
+}
+.ds_link img{
+	margin-right: 15px;
+}
+.la_inner{
+	padding-right: 3rem;
+}
+.ds_listing{
+	display: flex;
+	justify-content: space-between;
+	font-size: 20px;
+	color: #406C5D;
+	margin-bottom: 20px;
+}
+.mobile{
+	display: none;
+}
+.para_gre p br{display: none;}
+@media only screen and (max-width:1540px) and (min-width: 979px){
+	.green_box h1, .la_inner h2{
+		font-size: 30px;
+		line-height: 36px;
+	}
+	.green_box p{
+		font-size: 15px;
+		line-height: 20px;
+	}
+	.ds_link, .ds_listing{
+	 font-size: 18px;	
+	}
+}
+@media only screen and (max-width:1380px) and (min-width: 1280px){
+	
+	.green_box h1{
+		width: 250px;
+	}
+	.para_gre{
+		width: calc(100% - 250px);
+	}
+	
+	.bg_img img {
+    
+    height: 81vh;
+}
+}
+
+@media only screen and (max-width:979px) and (min-width: 280px){
+	body{
+		overflow: scroll;
+	}
+	header{
+		flex-direction: column;
+		min-height: 550px;
+		padding: 30px;
+		display: none;
+	}
+	.bg_img{
+		display: none;
+	}
+	.mobile{
+		display: block;
+		min-height: 600px;
+	}
+	.desk{
+		display: none;
+	}
+	.img_center{
+		position: static;
+	}
+	.img_center img{
+		width: 100%;
+		max-width: 100%;
+		
+	}
+	.bottom_box{
+		flex-direction: column;
+	}
+	.left_box {
+    width: 100vw;
+    order: 2;
+}
+	.right_box {
+    width: 100vw;
+    order: 1;
+		padding: 30px;
+}
+	.diya_top_left, .diya_top_right{
+		display: none;
+	}
+	.green_box h1{
+		width: 100%;
+		font-size: 28px;
+		line-height: 34px;
+	margin-bottom: 30px;
+	}
+	.para_gre{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.green_box{
+		flex-direction: column;
+	}
+	.green_box p br{
+		display:block;
+		margin-bottom: 30px;
+	}
+	.green_box p{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.la_box{
+		width:100%;
+		padding: 30px;
+	}
+	.la_inner{
+		padding-right: 0;
+	}
+	.la_inner h2, .ds_link{
+		margin-bottom: 35px;
+	}
+	header .nav_list ul li{
+		    display: block;
+		padding: 0;
+    padding: 2rem 0;
+    text-align: right;
+	}
+}
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+	and (-webkit-min-device-pixel-ratio: 2) {
+		.bg_img img{
+			width: auto;
+		}
+		header .nav_list ul li{
+			    padding-left: 3rem;
+		}
+		.bottom_box{
+			flex-direction: column;
+		}
+		.right_box {
+    background: #406C5D;
+    padding: 40px;
+    width: 100%
+}
+		.la_box{
+			padding-left: 40px;
+		}
+		
+		.left_box {
+    width: 100%;
+    order: 2;
+}
+		.bg_img{
+			overflow: hidden;
+		}
+		header{
+			padding-left: 40px;
+		}
+		
+}
+
+@media only screen and (max-width:3000px) and (min-width: 1660px){
+	.right_box{
+		padding: 84px 40px;
+	}	
+	header, .la_box{
+		padding-left: 8rem;		
+	}
+}
