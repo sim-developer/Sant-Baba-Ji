@@ -59,6 +59,8 @@ color: #fff;
 	width: 100%;
 	height: calc( 100vh - 50px);
 	z-index: 0;    overflow: hidden;
+	filter: blur(3px);
+    -webkit-filter: blur(3px);
 	
 }
 .bg_img img{
