@@ -180,18 +180,18 @@ header .nav_list ul li:first-child{
 }
 .la_inner h2{
 	font-size: 36px;
-	color: #ff9933;
+	color: #f37e09;
 	line-height: 40px;
 	letter-spacing: 0.2px;
 	margin-bottom: 15px;
 }
 .ds_listing a{
-	    color: #ff9933;
+	    color: #f37e09;
 	text-decoration: none;
 }
 .ds_link{
 	font-size: 20px;
-	color: #ff9933;
+	color: #f37e09;
 	margin-bottom: 15px;
 	display: flex;
     align-items: center;
@@ -206,7 +206,7 @@ header .nav_list ul li:first-child{
 	display: flex;
 	justify-content: space-between;
 	font-size: 20px;
-	color: #406C5D;
+	color: #f37e09;
 	margin-bottom: 20px;
 }
 .mobile{
